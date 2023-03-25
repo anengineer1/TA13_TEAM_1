@@ -1,0 +1,8 @@
+Ejercicio 6
+
+CLIENTE (PK_cod_cliente, nombre, apellidos)
+PROVEEDOR (PK_cod_proveedor, nombre)
+PRODUCTO (PK_cod_producto, cantidad, PK_PROVEEDOR_cod_proveedor(FK))
+PEDIDO (PK_cod_pedido, fecha_pedido, PK_CLIENTE_cod_cliente(FK), PK_PROVEEDOR_cod_producto(FK))
+ES_DE(PK_PEDIDO_cod_pedido(FK), PK_PRODUCTO_cod_producto(FK), num_unidades)
+ENCARGA(PK_PRODUCTO_cod_producto(FK), PK_PROVEEDOR_cod_proveedor(FK), unidades, fecha_encargo)
