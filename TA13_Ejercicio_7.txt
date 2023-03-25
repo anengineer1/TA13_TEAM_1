@@ -1,0 +1,6 @@
+Ejercicio 7
+
+ARRENDATARIO (PK_CIF/NIF_arrendatario, nombre_fiscal, nombre_firmante, cargo_firmante, dirección, código_postal, localidad, fax, actividad, telefono_fijo, telefono_movil)
+NAVE (PK_codigo_nave, poligono, calle, numero, localidad, codigo_postal, provincia, telefono, características, foto, datos escritura, alquilada, gastos comunidad, PK_ARRENDATARIO_CIF/NIF_arrendatario(FK))
+RECIBO(PK_numero_recibo, importe_total, importe_IVA, pagado, fecha, PK_ARRENDATARIO_CIF/NIF_arrendatario(FK), PK_NAVE_codigo_nave(FK))
+ALQUILER(PK_id_alquiler, numero_cuenta, dias_pago, fecha_alquiler, fecha_fin_alquiler, importe_alquiler, PK_ARRENDATARIO_CIF/NIF_arrendatario(FK), PK_NAVE_codigo_nave(FK))
