@@ -1,0 +1,8 @@
+Ejercicio 5
+
+FONDO (PK_Titulo, PK_Autor, cantidad)
+LIBRO (PK_Signatura, disponible, PK_Titulo(FK), PK_FONDO_Autor(FK))
+SOCIOS (PK_NºSocio, nombre, apellidos, teléfono, fecha_cad)
+SANCION (PK_Nºdias, PK_SOCIOS_nºsocio(FK))
+PRESTAMO_S (PK_Nºprestamo, fecha_prest, PK_LIBRO_signatura(FK), PK_SOCIOS_nºsocio(FK))
+PRESTAMO_E (PK_Nºprestamo, fecha_devol, PK_LIBRO_signatura(FK), PK_SOCIOS_nºsocio(FK))

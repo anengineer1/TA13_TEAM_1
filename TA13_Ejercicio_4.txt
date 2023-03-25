@@ -1,0 +1,11 @@
+Ejercicio 4
+
+PARQUE BOMBEROS (PK_Cod_parque, nombre, dirección, teléfono, categoría)
+COCHE (PK_Num_coche, marca, modelo, num_matricula, fecha_compra, fecha_ult_rev, PK_PARQUE BOMBEROS_cod_parque(FK))
+EQUIPO (PK_Cod_eq, nombre)
+PETICION SERVICIO (PK_CodPetServ, tipo_serv, gradoUrgencia, PK_EQUIPO_cod_eq(FK))
+BOMBERO (PK_Cod_bom, nombre, apellidos, fecha_nac, dni, dirección, teléfono, PK_PARQUE BOMBEROS_cod_parque(FK), PK_EQUIPO_cod_eq(FK))
+RECIBE (PK_PARQUE BOMBEROS_Cod_parque(FK), PK_PETICION SERVICIO_codPetServ(FK), fecha, hora)
+TURNO (PK_Cod_turno, descripción)
+PERIODO (PK_Fecha_inicio, PK_fecha_fin)
+TRABAJA_EN (PK_BOMBERO_Cod_bom(FK), PK_TURNO_cod_turno(FK), PK_PERIODO_fecha_inicio(FK), PK_PERIODO_fecha_fin(FK))
