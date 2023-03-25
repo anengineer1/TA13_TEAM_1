@@ -1,0 +1,11 @@
+Ejercicio 8
+
+PISO (PK_puerta, DNI, nombre, apellidos, dirección, código_postal, localidad, provincia, teléfono)
+CARGO (PK_codigo_cargo, nombre, funciones)
+OSTENTA (PK_id_ostenta, PK_CARGO_codigo_cargo(FK), PK_PISO_puerta(FK), fecha_posesión)
+INGRESO RECIBO (PK_codigo_anotacion, fecha, importe, mes, pagado, PK_PISO_puerta(FK))
+DETALLE RECIBO (PK_numero_linea, concepto, importe, PK_INGRESO_RECIBO_codigo_anotacion(FK))
+INGRESO EXTRA (PK_codigo_anotacion, fecha, importe, concepto)
+TIPO GASTO FIJO (PK_codigo_tipo_gasto, nombre, descripcion)
+GASTO FIJO (PK_codigo_anotacion, fecha, importe, fecha_inicio, fecha_fin, consumo, PK_TIPO GASTO FIJO_codigo_tipo_gasto(FK))
+GASTO VARIABLE (PK_codigo_anotacion, fecha, importe, fecha_factura, concepto, numero_factura)
