@@ -1,0 +1,3 @@
+Ejercicio 1
+
+Atleta (PK_nºdorsal, nombre, PK_nºdorsal_relevo(FK))

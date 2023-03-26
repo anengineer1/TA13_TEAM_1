@@ -1,0 +1,7 @@
+Ejercicio 2
+
+Elemento (PK_nombre_elemento, peso_atomico, simbolo, nºatomico)
+Gaseoso (PK_nombre_comp, coef_expan, temp_lic)
+Liquido (PK_nombre_comp, densidad, temp_evap)
+Solido (PK_nombre_comp, color, olor, dureza)
+Compuesto_por (PK_ELEMENTO_nombre_elemento(FK), PK_COMPUESTO_nombre_comp(FK))

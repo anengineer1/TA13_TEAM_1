@@ -1,0 +1,7 @@
+Ejercicio 3
+
+Sucursal (PK_Nºsucursal, ciudad, activo)
+Cliente (PK_DNI, nombre, apellidos, dirección, ciudad)
+Cuenta (PK_Nºcuenta, saldo)
+Abrir (PK_SUCURSAL_NºSucursal(FK), PK_CLIENTE_DNI(FK), PK_CUENTA_NºCuenta(FK))
+Transaccion (PK_transaccion, fecha, tipoOperacion, cantidad, PK_CUENTA_Nºcuenta(FK))
